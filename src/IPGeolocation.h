@@ -20,6 +20,7 @@
 
 struct IPGeo {
   String tz;
+  String abbreviation;
   double offset;
   String city;
   String country;

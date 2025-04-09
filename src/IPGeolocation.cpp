@@ -99,7 +99,7 @@ void IPGeolocation::updateStatus(IPGeo *I){
     I->latitude = doc["latitude"];
     I->longitude = doc["longitude"];
     I->ip_address = doc["ip_address"].as<String>();
-    I->isp_name = connection["isp_name"].as<String>();
+    I->isp_name = connection["autonomous_system_organization"].as<String>();
     I->flag_png = flag["png"].as<String>();
 
     DEBUGPRINT("Time Zone: ");
